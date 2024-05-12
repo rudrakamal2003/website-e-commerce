@@ -56,6 +56,19 @@
     bottom: -4px;
     left: 20px;
 }
+
+#navbar .icon {
+    background-color:#bbb;
+    border: none;
+    color: white;
+    padding: 17px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
 /* Home page */
 #hero{
     background-image: url(images/background\ img.png);
