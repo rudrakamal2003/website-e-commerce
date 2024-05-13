@@ -20,9 +20,18 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="cart.html"><img src="images/cart1.png" class="cart" alt=""></i></a></li>
-                <li class="icon"><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+                <button id="loginBtn">
+                    <li class="icon"><i class="fa-regular fa-user"></i></li>
+                </button>
             </ul>
         </div>
+
+        <div id="loginPopup" class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <button id="signInBtn" onclick="signIn()">Sign In</button>
+            <button id="signUpBtn" onclick="signUp()">Sign Up</button>
+        </div>
+
     </section>
     <section id="page-header">
         <h2>#Stayhome</h2>
@@ -390,5 +399,37 @@
 
 
     <script src="script.js"></script>
+    <script>
+        function openPopup() {
+            document.getElementById('loginPopup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('loginPopup').style.display = 'none';
+        }
+
+        function signIn() {
+            alert('Sign In button clicked!');
+            // You can add sign-in functionality here
+        }
+
+        function signUp() {
+            alert('Sign Up button clicked!');
+            // You can add sign-up functionality here
+        }
+
+        document.getElementById('loginBtn').addEventListener('click', openPopup);
+
+        function signIn() {
+            // Assuming 'signin.html' is the URL of the sign-in page
+            window.location.href = 'signin.html';
+        }
+
+        function signUp() {
+            // Assuming 'signup.html' is the URL of the sign-up page
+            window.location.href = 'signup.html';
+        }
+
+    </script>
 </body>
 </html>
