@@ -15,7 +15,5 @@
             MainImg.src = smallimg[3].src;
         }
 
-        // login section
        
-          
         
