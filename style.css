@@ -899,14 +899,14 @@ footer .copyright{
  .popup {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url(images/bg2.jpg);
-    padding: 25px;
+    top: 20%;
+    left: 85.35%;
+    transform: translate(-28%, -40%);
+    background-image: url(images/bg5.avif);
+    padding: 20px;
     border: 1px solid #000000;
-    border-radius: 10px;
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
 
   /* Styles for close button */
