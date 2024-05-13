@@ -75,7 +75,7 @@
 
 /* Home page */
 #hero{
-    background-image: url(images/background\ img.png);
+    background-image: url(images/homebanner.png);
     height: 90vh;
     width: 89.30%;
     background-size: cover;
@@ -93,12 +93,13 @@
     color: white;
 }
 #hero button{
-    background-image: url(images/);
-    background-color: transparent;
+    background-color:#088178;
     color: #fff;
     border: 0;
+    text-align: center;
+    align-items: center;
     padding: 10px 15px 10px 15px;
-    background-repeat: no-repeat;
+    position: absolute;
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
@@ -513,7 +514,7 @@ footer .copyright{
 } */
 /* shop page */
 #page-header{
-    background-image: url(images/stayhome.jpg);
+    background-image: url(images/shopbanner.png);
     width: 97.8%;
     height: 40vh;
     background-size: cover;
