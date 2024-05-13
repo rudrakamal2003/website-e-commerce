@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishloom saree</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section id="header">
         <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
@@ -20,18 +22,27 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="cart.html"><img src="images/cart1.png" class="cart" alt=""></i></a></li>
-                <li class="icon"><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+                <button id="loginBtn">
+                    <li class="icon"><i class="fa-regular fa-user"></i></li>
+                </button>
             </ul>
         </div>
+
+        <div id="loginPopup" class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <button id="signInBtn" onclick="signIn()">Sign In</button>
+            <button id="signUpBtn" onclick="signUp()">Sign Up</button>
+        </div>
+
     </section>
-    
-   
+
+
     <section id="hero">
         <h4>Trade-in-offer</h4>
         <h2>Super Value Deals</h2>
         <h1>On all Products</h1>
         <p>Save More with coupons</p>
-        <button id="shopnow">Shop Now</button>
+        <button id="shopnow"><a href="shop.html" class="shop">Shop Now</a></button>
         </div>
     </section>
     <section id="feature" class="section-p1">
@@ -69,7 +80,8 @@
                 <img src="images/s1.jpg" alt="">
                 <div class="des">
                     <span>Krishloom</span>
-                    <h5>Tant Women's Pure Cotton exclusive Tant Saree In pista Green with orange zari border without blouse piece.</h5>
+                    <h5>Tant Women's Pure Cotton exclusive Tant Saree In pista Green with orange zari border without
+                        blouse piece.</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -133,7 +145,8 @@
                 <img src="images/s5.jpg" alt="">
                 <div class="des">
                     <span>Krishloom</span>
-                    <h5>Bengal's Pride Premium Hand Woven Jangla Jaal Work Cotton Dhakai Jamdani Saree in Light Turquoise Green and Multicolored Thread Work                    </h5>
+                    <h5>Bengal's Pride Premium Hand Woven Jangla Jaal Work Cotton Dhakai Jamdani Saree in Light
+                        Turquoise Green and Multicolored Thread Work </h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -214,7 +227,7 @@
 
     <div class="container">
         <!-- <p>This is some content. You can click the button below to visit our shop.</p> -->
-        <button id="viewMoreBtn">Visit Shop</button>
+        <button id="viewMoreBtn"><a href="shop.html" class="viewMore">Visit Shop</a></button>
     </div>
 
     <section id="banner" class="section-m1">
@@ -239,9 +252,9 @@
         </div>
     </section>
     <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext"> 
-         <h4>Sign Up For Newsletters</h4>
-         <p>Get E-mail updates about our latest shop and <span>Special Offers</span></p>
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>Special Offers</span></p>
         </div>
         <div class="form">
             <input type="text" placeholder="Your email address">
@@ -251,7 +264,7 @@
 
     <footer class="section-p1">
         <div class="col">
-            <img src="images/logo.png" class="logo1" alt="">
+            <!-- <img src="images/logo.png" class="logo1" alt=""> -->
             <h4>Contact</h4>
             <p><strong>Address: </strong> type address</p>
             <p><strong>Phone: </strong> type Phone no.</p>
@@ -260,27 +273,29 @@
                 <h4>Follow Us</h4>
                 <div class="icon"></div>
                 <i class="fab fa-facebook-f"></i>
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <i class="fa-solid fa-phone"></i>
             </div>
         </div>
         <div class="col">
             <h4>About Us</h4>
-            <a href="#">About Us</a>
+            <a href="about.html">About Us</a>
             <a href="#">Delivery Information</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </div>
 
         <div class="col">
             <h4>My Account</h4>
-            <a href="#">Sign In</a>
-            <a href="#">Viwe Cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track My Order</a>
-            <a href="#">Help</a>
+            <a href="login.html">Sign In</a>
+            <a href="cart.html">Viwe Cart</a>
+            <!-- <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a> -->
+            <a href="contact.html">Help</a>
         </div>
 
-        <div class="col install">
+        <!-- <div class="col install">
             <h4>Install App</h4>
             <p>From App Store or Google Play</p>
             <div class="row">
@@ -290,7 +305,7 @@
             <p>Secured Payment Gateways</p>
             <img src="images/" alt="">
         </div>
-        
+         -->
         <div class="copyright">
             <p>© 2024, Group F. All rights reserved.</p>
 
@@ -298,6 +313,38 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script>
+        function openPopup() {
+            document.getElementById('loginPopup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('loginPopup').style.display = 'none';
+        }
+
+        function signIn() {
+            alert('Sign In button clicked!');
+            // You can add sign-in functionality here
+        }
+
+        function signUp() {
+            alert('Sign Up button clicked!');
+            // You can add sign-up functionality here
+        }
+
+        document.getElementById('loginBtn').addEventListener('click', openPopup);
+
+        function signIn() {
+            // Assuming 'signin.html' is the URL of the sign-in page
+            window.location.href = 'signin.html';
+        }
+
+        function signUp() {
+            // Assuming 'signup.html' is the URL of the sign-up page
+            window.location.href = 'signup.html';
+        }
+
+    </script>
 </body>
+
 </html>

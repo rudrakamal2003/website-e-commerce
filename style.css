@@ -101,7 +101,7 @@
 
 }
 #shopnow {
-    background-color: #4a8a20; /* Green background color */
+    background-color: #539427; /* Green background color */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -112,6 +112,11 @@
 }
 #shopnow:hover {
     background-color: rgb(28, 156, 97);
+}
+
+#shopnow .shop {
+    color: white;
+    text-decoration: none;
 }
 
 .section-p1 {
@@ -139,7 +144,12 @@
 #viewMoreBtn:hover {
     background-color: rgb(28, 156, 97); 
 }
+#viewMoreBtn .viewMore {
+    color: white;
+    text-decoration: none;
 
+}
+    
 #feature{
     display: flex;
     align-items: center;
@@ -880,3 +890,26 @@ footer .copyright{
     padding: 10px;
     font-size: 13px;
 }
+
+/* login section */
+ /* Styles for popup */
+ .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  /* Styles for close button */
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
