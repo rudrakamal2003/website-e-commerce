@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: -10px -85px;
     background-color: #e3e6f3;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
     z-index: 999;
@@ -21,7 +21,7 @@
     left: 0;
 }
 .logo2{
-    padding-right: 40%;   
+    padding-right: 45%;   
     color: #088178;
 }
 #navbar
