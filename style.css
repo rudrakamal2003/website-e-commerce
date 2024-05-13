@@ -83,15 +83,11 @@
     padding: 0 80px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+    
 }
-#hero h4{
-    color: white;
-}
-#hero h1{
-    color: white;
-}
+
 #hero button{
     background-color:#088178;
     color: #fff;
@@ -101,20 +97,22 @@
     padding: 10px 15px 10px 15px;
     position: absolute;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px;
-
+    bottom: -44px;
 }
 #shopnow {
     background-color: #539427; /* Green background color */
+    text-align: center;
     color: white;
     padding: 10px 20px;
-    border: none;
+    border: 15px;
     cursor: pointer;
-    border-radius: 5px; /* Add rounded corners */
+    border-radius: 15px; 
     font-size: 16px; /* Increase font size */
     transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
+
 #shopnow:hover {
     background-color: rgb(28, 156, 97);
 }
