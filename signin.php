@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +7,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <section id="registration">
-        <div class="signup">
-            <h1>Sign Up</h1>
-            <h4>It's free and only take a minute</h4>
+        <div class="signin">
+            <h1>Sign In</h1>
             <form>
-                <label>First Name</label>
-                <input type="text" name="" required>
-                <label>Last Name</label>
-                <input type="text" name="" required>
                 <label>Email</label>
                 <input type="email" name="" required>
                 <label>Password</label>
                 <input type="password" name="" required>
                 <input type="submit" name="" value="Submit">
             </form>
-            <p>By clicking the Sign Up button, you agree to our <br>
-                <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+            <p>Not have an account? <a href="signup.php">Sign Up here</a>
             </p>
-            <p>Already have account? <a href="#">Login Here</a></p>
+
         </div>
     </section>
+    
 </body>
-
 </html>

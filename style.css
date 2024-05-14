@@ -975,13 +975,14 @@ footer .copyright{
     width: 350px;
     height: 550px;
     background-color: #fff;
-    border-radius: 5px;
-    transform: translate(140%, 10%);
+    border-radius: 15px;
+    transform: translate(165%, 15%);
     
   }
 
   #registration .signup h1 {
     text-align: center;
+    padding: 15px;
   }
   #registration .signup h4 {
     text-align: center;
@@ -1024,4 +1025,23 @@ footer .copyright{
     text-align: center;
     padding-top: 20px;
     font-size: 15px;
+}
+
+#registration .signin{
+    width: 350px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 15px;
+    transform: translate(165%, 60%);
+    text-align: center;
+}
+
+#registration .signin p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#registration .signin h1 {
+    padding: 15px;
 }
