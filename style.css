@@ -607,7 +607,7 @@ footer .copyright{
 #prodetails .single-pro-details span{
     line-height: 25px;
 }
-/* blog page */
+/* blog page
 #page-header .blog-header{
     background-image: url();
 }
@@ -675,7 +675,7 @@ footer .copyright{
     color: #c9cbce;
     z-index: -9;
 
-}
+} */
 /* about page */
 #page-header.about-header{
     background-image: url(images/knowus.jpg);
@@ -960,3 +960,68 @@ footer .copyright{
   #signUpBtn:hover {
     background-color: #088178;
   }
+
+  /* signup page */
+  #registration {
+    /* background-image: url(images/login\ bg.jpg); */
+    background-color: #088178;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+
+  #registration .signup {
+    width: 350px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform: translate(140%, 10%);
+    
+  }
+
+  #registration .signup h1 {
+    text-align: center;
+  }
+  #registration .signup h4 {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  #registration form {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  #registration form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  #registration form input {
+    width: 100%;
+
+  }
+
+  #registration input[type="submit"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #ff7200;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  #registration input[type="submit"]:hover {
+    color: #fff;
+    background: rgb(13, 211, 247);
+  }
+
+#registration .signup p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
