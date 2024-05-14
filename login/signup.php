@@ -10,12 +10,12 @@
         $email = $_POST['email'];
         $password = $_POST['pass'];
 
-        if(!empty($gmail) && !empty($password) && !is_numeric($gmail))
+        if(!empty($email) && !empty($password) && !is_numeric($email))
         {
 
-            $query = "insert into form (fname, lname, email, pass) values ('$firstname','$lastname','$gmail','$password',)";
+            $query = "insert into form (fname, lname, email, pass) values ('$firstname','$lastname','$email','$password',)";
 
-            mysqli_query($con, $query);
+            'mysqli_query($con, $query)';
 
             echo "<script type='text/javascript'> alert('Successfully Register')</script>";
 

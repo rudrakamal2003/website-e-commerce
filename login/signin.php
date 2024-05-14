@@ -8,7 +8,7 @@
         $email = $_POST['email'];
         $password = $_POST['pass'];
 
-        if(!empty($gmail) && !empty($password) && !is_numeric($gmail))
+        if(!empty($email) && !empty($password) && !is_numeric($email))
         {
         $query = "select * from form where email = '$email' limit 1";
         $result = mysqli_query($con, $query);
