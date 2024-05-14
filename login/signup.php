@@ -5,10 +5,10 @@
 
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
-        $Firstname = $_POST['fname']
-        $Lastname = $_POST['lname']
-        $Gmail = $_POST['email']
-        $Password = $_POST['pass']
+        $firstname = $_POST['fname'];
+        $lastname = $_POST['lname'];
+        $email = $_POST['email'];
+        $password = $_POST['pass'];
 
         if(!empty($gmail) && !empty($password) && !is_numeric($gmail))
         {
@@ -22,7 +22,7 @@
         }
         else
         {
-            echo "<script type='text/javascript'> alert('Please Enter Some Valid Information')</script>"  
+            echo "<script type='text/javascript'> alert('Please Enter Some Valid Information')</script>";
         }
 
     }
