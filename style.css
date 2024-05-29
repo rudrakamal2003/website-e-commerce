@@ -21,6 +21,13 @@
     left: 0;
 }
 
+#logName {
+    text-align: center;
+    background: linear-gradient(to right,#c2e2e2, #c9d6ff);
+    margin: 5px 600px;
+    border-radius: 10px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -148,6 +155,7 @@ html.my-text {
 
 .section-p1 {
     padding: 40px 80px;
+    background: linear-gradient(to right,#c2e2e2, #c9d6ff);
 }
 
 .container{
@@ -943,8 +951,8 @@ footer .copyright{
     display: none;
     position: fixed;
     top: 20%;
-    left: 85.35%;
-    transform: translate(-28%, -40%);
+    left: 90%;
+    transform: translate(-20%, -30%);
     background-image: url(images/bg5.avif);
     padding: 20px;
     border: 1px solid #000000;

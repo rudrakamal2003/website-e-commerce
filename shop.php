@@ -1,26 +1,31 @@
+<?php
+include("header.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishloom saree</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section id="header">
         <a href="#"><img src="images/logo5.png" class="logo" alt=""></a>
         <h3 class="logo2">Krishloom Saree</h3>
-        
-
 
         <div>
             <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><img src="images/cart1.png" class="cart" alt=""></i></a></li>
+                <li><a href="homepage.php">Home</a></li>
+                <li><a class="active" href="shop.php">Shop</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="cart.php"><img src="images/cart1.png" class="cart" alt=""></i></a></li>
                 <button id="loginBtn">
                     <li class="icon"><i class="fa-regular fa-user"></i></li>
                 </button>
@@ -29,18 +34,14 @@
 
         <div id="loginPopup" class="popup">
             <span class="close" onclick="closePopup()">&times;</span>
-            <button id="signInBtn" onclick="signIn()">Sign In</button>
-            <button id="signUpBtn" onclick="signUp()">Sign Up</button>
+            <button id="signInBtn" onclick="signIn()">Logout</button>
         </div>
 
-    </section>
-    <section id="page-header">
-        
     </section>
 
     <section id="product1" class="section-p1">
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='sproduct.html';">
+            <div class="pro" onclick="window.location.href='sproduct.php';">
                 <img src="images/s1.jpg" alt="">
                 <div class="des">
                     <span>Krishloom</span>
@@ -108,7 +109,7 @@
                 <img src="images/s5.jpg" alt="">
                 <div class="des">
                     <span>Krishloom</span>
-                    <h5>Bengal's Pride Premium Hand Woven Jangla Jaal Work Cotton Dhakai Jamdani Saree in Light Turquoise Green and Multicolored Thread Work                    </h5>
+                    <h5>Bengal's Pride Premium Hand Woven Jangla Jaal Work Cotton Dhakai Jamdani Saree in Light Turquoise Green and Multicolored Thread Work </h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -252,7 +253,7 @@
                 <img src="images/s5.jpg" alt="">
                 <div class="des">
                     <span>Krishloom</span>
-                    <h5>Bengal's Pride Premium Hand Woven Jangla Jaal Work Cotton Dhakai Jamdani Saree in Light Turquoise Green and Multicolored Thread Work                    </h5>
+                    <h5>Bengal's Pride Premium Hand Woven Jangla Jaal Work Cotton Dhakai Jamdani Saree in Light Turquoise Green and Multicolored Thread Work </h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -337,67 +338,10 @@
         <a href="#">Next</a>
     </section>
 
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext"> 
-         <h4>Sign Up For Newsletters</h4>
-         <p>Get E-mail updates about our latest shop and <span>Special Offers</span></p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
-        </div>
-    </section>
-
-    <footer class="section-p1">
-        <div class="col">
-            <img src="images/logo.png" class="logo1" alt="">
-            <h4>Contact</h4>
-            <p><strong>Address: </strong> type address</p>
-            <p><strong>Phone: </strong> type Phone no.</p>
-            <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
-            <div class="follow">
-                <h4>Follow Us</h4>
-                <div class="icon"></div>
-                <i class="fab fa-facebook-f"></i>
-            </div>
-        </div>
-        <div class="col">
-            <h4>About Us</h4>
-            <a href="#">About Us</a>
-            <a href="#">Delivery Information</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
-        </div>
-
-        <div class="col">
-            <h4>My Account</h4>
-            <a href="#">Sign In</a>
-            <a href="#">Viwe Cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track My Order</a>
-            <a href="#">Help</a>
-        </div>
-
-        <div class="col install">
-            <h4>Install App</h4>
-            <p>From App Store or Google Play</p>
-            <div class="row">
-                <img src="images/" alt="">
-                <img src="images/" alt="">
-            </div>
-            <p>Secured Payment Gateways</p>
-            <img src="images/" alt="">
-        </div>
-        
-        <div class="copyright">
-            <p>© 2024, Group F. All rights reserved.</p>
-
-        </div>
-    </footer>
 
 
     <script src="script.js"></script>
+
     <script>
         function openPopup() {
             document.getElementById('loginPopup').style.display = 'block';
@@ -421,14 +365,18 @@
 
         function signIn() {
             // Assuming 'signin.html' is the URL of the sign-in page
-            window.location.href = 'login/signin.php';
+            window.location.href = 'logout.php';
         }
 
-        function signUp() {
-            // Assuming 'signup.html' is the URL of the sign-up page
-            window.location.href = 'login/signup.php';
-        }
-
+        // function signUp() {
+        //     // Assuming 'signup.html' is the URL of the sign-up page
+        //     window.location.href = 'login/index.php';
+        // }
     </script>
 </body>
+
 </html>
+
+<?php
+include("footer.php");
+?>

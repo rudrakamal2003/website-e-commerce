@@ -1,5 +1,11 @@
+<?php
+include("header.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +13,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <section id="header">
+<section id="header">
         <a href="#"><img src="images/logo5.png" class="logo" alt=""></a>
         <h3 class="logo2">Krishloom Saree</h3>
 
-
         <div>
             <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a class="active" href="cart.html"><img src="images/cart1.png" class="cart" alt=""></i></a></li>
+                <li><a href="homepage.php">Home</a></li>
+                <li><a href="shop.php">Shop</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a class="active" href="cart.php"><img src="images/cart1.png" class="cart" alt=""></i></a></li>
                 <button id="loginBtn">
                     <li class="icon"><i class="fa-regular fa-user"></i></li>
                 </button>
@@ -28,11 +34,11 @@
 
         <div id="loginPopup" class="popup">
             <span class="close" onclick="closePopup()">&times;</span>
-            <button id="signInBtn" onclick="signIn()">Sign In</button>
-            <button id="signUpBtn" onclick="signUp()">Sign Up</button>
+            <button id="signInBtn" onclick="signIn()">Logout</button>
         </div>
 
     </section>
+
     <section id="page-header" class="blog-header">
     </section>
 
@@ -69,7 +75,11 @@
             // Assuming 'signup.html' is the URL of the sign-up page
             window.location.href = 'login/signup.php';
         }
-
     </script>
 </body>
+
 </html>
+
+<?php
+include("footer.php");
+?>
